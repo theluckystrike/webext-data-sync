@@ -1,0 +1,37 @@
+{
+    "name": "webext-data-sync",
+    "version": "0.1.0",
+    "description": "Cross-browser data sync for Chrome extensions — IndexedDB wrapper, data versioning, conflict resolution, and export/import for MV3.",
+    "author": "Zovo <hello@zovo.one>",
+    "license": "MIT",
+    "keywords": [
+        "chrome-extension",
+        "data-sync",
+        "indexeddb",
+        "storage",
+        "sync",
+        "manifest-v3",
+        "browser-extension",
+        "backup",
+        "export"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/theluckystrike/webext-data-sync.git"
+    },
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "files": [
+        "dist",
+        "README.md",
+        "LICENSE"
+    ],
+    "scripts": {
+        "build": "tsc",
+        "prepublishOnly": "npm run build"
+    },
+    "devDependencies": {
+        "@types/chrome": "^0.0.260",
+        "typescript": "^5.3.3"
+    }
+}
